@@ -1,19 +1,44 @@
 {
-  "posts": [
+  "clothingItems": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Dresses",
+      "price": 1500.00,
+      "description": "A stylish Dress made from 100% organic cotton.",
+      "image": "https://example.com/tshirt.jpg",
+      "sizes": ["S","M","L","XL"],
+      "colors": ["Blue","Green","Black"],
+      "inStock": true
+    },
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Dresses",
+      "price": 1500.00,
+      "description": "A stylish Dress made from 100% organic cotton.",
+      "image": "https://example.com/tshirt.jpg",
+      "sizes": ["S","M","L","XL"],
+      "colors": ["Blue","Green","Black"],
+      "inStock": true
+    },
+    {
+      "id": 1,
+      "name": "Dresses",
+      "price": 1500.00,
+      "description": "A stylish Dress made from 100% organic cotton.",
+      "image": "https://example.com/tshirt.jpg",
+      "sizes": ["S","M","L","XL"],
+      "colors": ["Blue","Green","Black"],
+      "inStock": true
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    {
+      "id": 1,
+      "name": "Dresses",
+      "price": 1500.00,
+      "description": "A stylish Dress made from 100% organic cotton.",
+      "image": "https://example.com/tshirt.jpg",
+      "sizes": ["S","M","L","XL"],
+      "colors": ["Blue","Green","Black"],
+      "inStock": true
+    }
+  ]
 }

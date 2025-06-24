@@ -8,7 +8,8 @@
       "image": "https://example.com/tshirt.jpg",
       "sizes": ["S","M","L","XL"],
       "colors": ["Blue","Green","Black"],
-      "inStock": true
+      "inStock": true,
+      "reviews": "are the Dresses to your satisfaction"
     },
     {
       "id": 1,
@@ -18,7 +19,8 @@
       "image": "https://example.com/tshirt.jpg",
       "sizes": ["S","M","L","XL"],
       "colors": ["Blue","Green","Black"],
-      "inStock": true
+      "inStock": true,
+      "reviews": "are the Dresses to your satisfaction"
     },
     {
       "id": 1,
@@ -28,7 +30,8 @@
       "image": "https://example.com/tshirt.jpg",
       "sizes": ["S","M","L","XL"],
       "colors": ["Blue","Green","Black"],
-      "inStock": true
+      "inStock": true,
+      "reviews": "are the Dresses to your satisfaction"
     }
     {
       "id": 1,
@@ -38,7 +41,8 @@
       "image": "https://example.com/tshirt.jpg",
       "sizes": ["S","M","L","XL"],
       "colors": ["Blue","Green","Black"],
-      "inStock": true
+      "inStock": true,
+      "reviews": "are the Dresses to your satisfaction"
     }
   ]
 }

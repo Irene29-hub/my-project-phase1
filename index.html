@@ -1,197 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUMBLEBEE BOUTIQUE</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <title>BumbleBee Boutique Shop</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>BumbleBee Boutique</h1>
+
+  <h1>Welcome to BUMBLEBEE BOUTIQUE</h1>
+  <header>
+        <div class="container">
+            <h2>My Boutique</h2>
             <nav>
                 <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="clothes">Clothes</a></li>
-                    <li><a href="shoes">Shoes</a></li>
-                    <li><a href="innerwear">InnerWear</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div>
-                <input type="text" placeholder="Search products">
-                <button>Search</button>
-                <button>
-                    Cart (<span id="cartItemCount">0</span>)
-                </button>
-            </div>
         </div>
     </header>
-    
-    <main>
-        <section id="HomePage">
-            <div>
-                <h2>Welcome to BumbleBee Boutique</h2>
-                <p>Discover amazing products here.</p>
-                <div>
-                    <button>Shop All</button>
-                </div>
-            </div>
 
-            <h3>Featured Products</h3>
-            <div id="featuredProductsContainer">
-                <div>
-                    <img src="/home/irene/Images/lace bodycon black.jpg" alt="Lace Bodycon">
-                    <img src="/home/irene/Images/lace bodycon white.jpg" alt="Lace Bodycon">
-                    <img src="/home/irene/Images/lace bodycon navyblue back.jpg" alt="Lace Bodycon">
-                    <img src="/home/irene/Images/lace bodycon navyblue.jpg" alt="Lace Bodycon">
-                    <img src="/home/irene/Images/lace bodycon Maroon.jpg" alt="Lace Bodycon">
-                    <img src="/home/irene/Images/lace bodycon lightblue.jpg" alt="Lace Bodycon">
-                    <div>
-                        <h3>Lace Bodycon</h3>
-                        <p>This elegant off-shoulder midi dress features a body-hugging silhouette crafted from intricate lace fabric. With cap sleeves and a tasteful V-notch neckline, it blends sophistication with a hint of allure. The hem showcases a sheer lace panel for added detail and femininity, making it perfect for formal events or stylish occasions. Available in multiple colors to suit your vibe and mood.</p>
-                        <span>ksh 1500.00</span>
-                        <button>View Details</button>
-                    </div>
-                    <div>
-                    <img src="/home/irene/Images/printed sleeves Midi white.jpg" alt="Printend Sleeve Midi">
-                    <img src="/home/irene/Images/printed sleeves Midi maroon.jpg" alt="Printend Sleeve Midi">
-                    <img src="/home/irene/Images/printed sleeves Midi green.jpg" alt="Printend Sleeve Midi">
-                    <img src="/home/irene/Images/printed sleeves Midi blue.jpg" alt="Printend Sleeve Midi">
-                    <img src="/home/irene/Images/printed sleeves Midi black.jpg" alt="Printend Sleeve Midi">
-                    <div>
-                        <h3>Printend Sleeve Midi</h3>
-                        <p>This chic midi dress exudes elegance with its rich color and eye-catching details. It features bold, patterned puff sleeves that add drama and flair, balanced by a sleek, fitted silhouette that flatters the figure. A decorative front belt detail with gold ring accents draws attention to the waist, while a subtle front slit offers just the right touch of sophistication. Available in multiple colors, it’s perfect for stylish outings, special events, or when you want to turn heads with class.</p>
-                        <span>ksh 1500.00</span>
-                        <button>View Details</button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section id="productspage" style="display:none;">
-            <h2 id="productsPageTitle">All Products</h2>
-            <div id="productsContainer">
-
-            </div>
-            <p id="noResultMessage" style="display: none;">No products found.</p>
-        </section>
-
-        <section id="checkoutPage" style="display: none;">
-            <div>
-                <h2>Checkout</h2>
-                <div>
-                    <h3>Order Summary</h3>
-                    <div id="checkoutItems">
-                        <!--the items will be displayed here-->
-                    </div>
-                    <div>
-                        <span>Total</span>
-                        <span id="checkoutTotal">ksh 0.00</span>
-                    </div>
-                </div>
-
-                <form id="checkoutForm">
-                    <div>
-                        <h3>Shipping Information</h3>
-                        <div>
-                            <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" required>
-                        </div>
-                        <div>
-                            <label for="address">Address</label>
-                            <input type="text" id="address" required>
-                        </div>
-                        <div>
-                            <label for="city">City</label>
-                            <input type="text" id="city" required>
-                        </div>
-                        <div>
-                            <label for="zipcode">Zip Code</label>
-                            <input type="text" id="zipCode" required>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3>Payment Information</h3>
-                        <div>
-                            <label for="cardNumber">Card Number</label>
-                            <input type="text" id="cardNumber" required>
-                        </div>
-                        <div>
-                            <div>
-                                <label for="expDate">Expiry Date (MM/YY)</label>
-                                <input type="text" id="expDate" placeholder="MM/YY" required>
-                            </div>
-                            <div>
-                                <label for="cvv">CVV</label>
-                                <input type="text" id="cvv" required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <button type="submit">Place Order</button>
-                    </div>
-                </form>   
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <div>
-                <a href="link">Instagram</a>
-                <a href="link">WhatsApp Business</a>
-                <a href="link">Tik Tok</a>
-            </div>
-            <p>&copy; 2025 BUMBLEBEE BOUTIQUE. All rights reserved</p>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to our online boutique, where we offer a curated selection of unique and stylish clothing and accessories. We are passionate about fashion and strive to bring you the latest trends and timeless classics.</p>
         </div>
-    </footer>
+    </section>
 
-    <div id="productDetailsModal" style="display: none;">
-        <div>
-            <div>
-                <img id="modalproductimage" src="" alt="Product Image">
-            </div>
-            <div>
-                <h3>Product Name</h3>
-                <p>Product description goes here</p>
-                <span>Price: ksh 0.00</span>
-                <div id="modalProductOptions">
-                    <!-- size and color option will go here-->
-                </div>
-                <div>
-                    <button id="modalAddToCartBtn">Add to Cart</button>
-                    <button>Close</button>
-                </div>
-            </div>
-        </div>
+<section id="products">
+
+  <div class="container">
+    <div class="product" data-name="Lace Bodycon" data-price="1500.00">
+      <img src="/images/lace bodycon black.jpg" alt="lace bodycon">
+      <div class="product-title">Lace Bodycon</div>
+      <div class="product-price">Ksh1500.00</div>
+      <button class="add-to-cart">Add to Cart</button>
     </div>
 
-    <div id="cartModal" style="display: none;">
-        <div>
-            <div>
-                <h3>Your Cart</h3>
-                <button>Close</button>
-            </div>
-            <div id="cartItemsContainer">
-                <p id="emptyCarMessage">Your cart is empty.</p>
-            </div>
-            <div>
-                <div>
-                    <span>Subtotal:</span>
-                    <span id="cartTotal">ksh 0.00</span>
-                </div>
-                <button id="checkoutBtn">Proceed to Checkout</button>
-            </div>
+    <div class="product" data-name="Lace Bodycon" data-price="1500.00">
+      <img src="/images/lace bodycon lightblue (1).jpg" alt="lace bodycon">
+      <div class="product-title">Lace Bodycon</div>
+      <div class="product-price">Ksh1500.00</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-name="Printed Sleeves Midi" data-price="1800.00">
+      <img src="/images/printed sleeves Midi black.jpg" alt="printed sleeves midi">
+      <div class="product-title">Printed Sleeves Midi</div>
+      <div class="product-price">Ksh 1800.00</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-name="Printed Sleeves Midi" data-price="1800.00">
+      <img src="/images/printed sleeves Midi maroon.jpg" alt="printed sleeves midi">
+      <div class="product-title">Printed Sleeves Midi</div>
+      <div class="product-price">Ksh 1800.00</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-name="Printed Sleeves Midi" data-price="1800.00">
+      <img src="/images/printed sleeves Midi white.jpg" alt="printed sleeves midi">
+      <div class="product-title">Printed Sleeves Midi</div>
+      <div class="product-price">Ksh 1800.00</div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</section>
+  <div id="cart">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p><strong>Total:</strong> Ksh<span id="cart-total">0.00</span></p>
+    <button class="checkout-button" onclick="goToCheckout()">Checkout</button>
+  </div>
+  <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: bumblebeeboutiq@gmail.com</p>
+            <p>Phone: 0711 223344</p>
+            <p>Address: 123 Main Street, Thika, KENYA</p>
         </div>
-    </div>
+    </section>
 
-    <div id="messageBox" style="display: none;">
-        your message will display here
-    </div>
+  <script src="./src/index.js"></script>
 
-    <script src="/src/index.js"></script>
 </body>
 </html>
+

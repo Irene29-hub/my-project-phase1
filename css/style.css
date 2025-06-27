@@ -1,147 +1,118 @@
+/* lets style the body */
 body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 20px;
-    }
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #111;
+  margin: 0;
+  padding: 20px;
+}
 
-    h1 {
-      text-align: center;
-    }
+h1 {
+  text-align: center;
+}
 
-    header {
-      background: #007bff;
-      color: black;
-      padding: 24px 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      margin-bottom: 30px;
-      text-align: left;
-      letter-spacing: 1px;
-    }
-    header nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 24px;
-      justify-content: center;
-    }
+#displayProducts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-    header nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 18px;
-      padding: 6px 14px;
-      border-radius: 4px;
-    }
-    header nav ul li a:hover,
-    header nav ul li a:focus {
-      background: #fff;
-      color: #007bff;
-    }
+.post-preview {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff;
+}
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
+.post-preview img {
+  border-radius: 4px;
+}
 
-    .product {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      width: 240px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+/* style the Header Navigation */
+header {
+  background: #007bff;
+  color: black;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
 
-    .product img {
-      width: 100%;
-      border-radius: 5px;
-    }
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 0;
+}
 
-    .product-title {
-      font-size: 18px;
-      margin: 10px 0 5px;
-    }
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
 
-    .product-price {
-      color: #28a745;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+header nav ul li a:hover {
+  background: #fff;
+  color: #007bff;
+}
 
-    .add-to-cart {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 14px;
-    }
+/* style the Contact Section */
+.contact {
+  background: #fff;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  padding: 24px;
+  width: 320px;
+  margin: 40px auto;
+  text-align: left;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
 
-    .add-to-cart:hover {
-      background-color: #0056b3;
-    }
+.contact h2 {
+  color: #007bff;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
 
-    #cart {
-      margin-top: 40px;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
+.contact p {
+  margin: 8px 0;
+  color: #333;
+}
 
-    #cart ul {
-      padding-left: 20px;
-    }
+/* Lets style the Dark Mode */ 
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
 
-    #cart h2 {
-      text-align: center;
-    }
+body.dark-mode .post-preview {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
 
-    .checkout-button {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      margin-top: 15px;
-      background: #28a745;
-      color: white;
-      font-size: 16px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+body.dark-mode header {
+  background: #1f1f1f;
+  color: #f5f5f5;
+}
 
-    .checkout-button:hover {
-      background-color: #218838;
-    }
-    .contact {
-      background: black;
-      border: 1px solid #007bff;
-      border-radius: 10px;
-      padding: 24px 20px;
-      width: 320px;
-      margin: 40px auto 0 auto;
-      text-align: left;
-      box-shadow: 0 4px 16px rgba(10, 12, 14, 0.08);
-      font-size: 16px;
-    }
-    .contact h2 {
-      color: blue;
-      margin-bottom: 12px;
-      font-size: 22px;
-    }
-    .contact p {
-      margin: 8px 0;
-      color: grey;
-    }
+body.dark-mode header nav ul li a {
+  color: #f5f5f5;
+}
+
+body.dark-mode header nav ul li a:hover {
+  background: #f5f5f5;
+  color: #007bff;
+}
+
+body.dark-mode .contact {
+  background: #1e1e1e;
+  border-color: #444;
+  color: #ccc;
+}
+

@@ -29,50 +29,20 @@
     </section>
 
 <section id="products">
-
-  <div class="container">
-    <div class="product" data-name="Lace Bodycon" data-price="1500.00">
-      <img src="/images/lace bodycon black.jpg" alt="lace bodycon">
-      <div class="product-title">Lace Bodycon</div>
-      <div class="product-price">Ksh1500.00</div>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-
-    <div class="product" data-name="Lace Bodycon" data-price="1500.00">
-      <img src="/images/lace bodycon lightblue (1).jpg" alt="lace bodycon">
-      <div class="product-title">Lace Bodycon</div>
-      <div class="product-price">Ksh1500.00</div>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-
-    <div class="product" data-name="Printed Sleeves Midi" data-price="1800.00">
-      <img src="/images/printed sleeves Midi black.jpg" alt="printed sleeves midi">
-      <div class="product-title">Printed Sleeves Midi</div>
-      <div class="product-price">Ksh 1800.00</div>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-
-    <div class="product" data-name="Printed Sleeves Midi" data-price="1800.00">
-      <img src="/images/printed sleeves Midi maroon.jpg" alt="printed sleeves midi">
-      <div class="product-title">Printed Sleeves Midi</div>
-      <div class="product-price">Ksh 1800.00</div>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-
-    <div class="product" data-name="Printed Sleeves Midi" data-price="1800.00">
-      <img src="/images/printed sleeves Midi white.jpg" alt="printed sleeves midi">
-      <div class="product-title">Printed Sleeves Midi</div>
-      <div class="product-price">Ksh 1800.00</div>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
+  <div id="displayProducts"></div>
+  <div>
+    <h3>Your Cart</h3>
+    <p>Total: Ksh<span id="cart-total">0.00</span></p>
   </div>
+  <div style="margin: 20px 0;">
+  <input type="text" id="searchInput" placeholder="Search dresses..." />
+  <label>
+    <input type="checkbox" id="themeToggle" />
+    Dark Mode
+  </label>
+</div>
 </section>
-  <div id="cart">
-    <h2>🛒 Your Cart</h2>
-    <ul id="cart-items"></ul>
-    <p><strong>Total:</strong> Ksh<span id="cart-total">0.00</span></p>
-    <button class="checkout-button" onclick="goToCheckout()">Checkout</button>
-  </div>
+  
   <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
